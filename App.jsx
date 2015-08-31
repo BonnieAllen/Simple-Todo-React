@@ -1,5 +1,9 @@
 // App component - represents the whole app
 App = React.createClass({
+
+   mixins: [ReactMeteorData],
+
+   
   getTasks() {
     return [
       { _id: 1, text: "This is task 1" },
